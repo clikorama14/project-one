@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Star Wars Characters</title>
+  <link rel="stylesheet" href="site.css">
+  <script src="film.js" defer></script>
+</head>
+
+<body>
+  <div>
+    <h1>Films</h1>
+    <label for="searchString">Who you looking for? <span class="small">(Regular expressions are cool
+        here)</span></label>
+    <input id="searchString" oninput="filterCharacters()" autocomplete="off" />
+  </div>
+  <h1>Title:</h1>
+  <br>
+  <section id="filmDetails"></section>
+  <br><br><br>
+  <h1>Characters:</h1>
+  <section id="characters"></section>
+  <h1>Planets:</h1>
+  <section id="planets"></section>
+</body>
+
+</html>
